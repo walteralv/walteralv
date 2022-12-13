@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Walter Alvarado</title>
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a href="https://linkedin.com/in/gregoryrecalde" class="link" target=”_blank”
+          >Walter Alvarado</a
+        >
+      </h3>
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Data Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#web_projects">Web Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About -->
+      <div class="about center">
+        <h1>Hi, I am <span class="about__name">Walter Alvarado.</span></h1>
+        <h2 class="about__role">Data Science & Software Engineer</h2>
+        <p class="about__desc">
+          I currently work as a Fullstack Developer. However, I really enjoy working with Data Science and Big Data using Python and Spark. I have also worked with Machine Learning.
+        </p>
+
+        <div class="about__contact center">
+          <a href="#projects">
+            <span class="btn btn--outline">Resume</span>
+          </a>
+
+          <a
+            href="https://github.com/walteralv"
+            aria-label="github"
+            class="link link--icon"
+            target=”_blank”
+          >
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+
+          <a
+            href="https://linkedin.com/in/walter-ac"
+            aria-label="linkedin"
+            class="link link--icon"
+            target=”_blank”
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Data Projects</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>New York Taxis Trips ETL</h3>
+            <p class="project__description">
+                In this project, an ETL was created to obtain taxi trip data, to later make an Analysis and find patterns, finally a Machine Learning model was created to Recommend the price of a trip.               
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">PostgreSql</li>
+              <li class="project__stack-item">Airflow</li>
+              <li class="project__stack-item">FastAPI</li>
+            </ul>
+            <a
+              href="https://github.com/walteralv/NY_Taxis_Trips"
+              aria-label="live preview"
+              class="link link--icon"
+              target="_blank"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://community.powerbi.com/t5/Data-Stories-Gallery/An%C3%A1lisis-del-movimiento-de-los-taxis-en-Nueva-York/m-p/2654356"
+              aria-label="live preview"
+              class="link link--icon"
+              target="_blank"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+
+            <a
+            href="https://www.youtube.com/watch?v=tHQq8DpLlK8"
+            aria-label="live preview"
+            class="link link--icon"
+            target="_blank"
+          >
+            <i aria-hidden="true" class="fas fa-video"></i>
+          </a>
+
+          </div>
+
+          <div class="project">
+            <h3>Parking and Camera Violations EDA</h3>
+            <p class="project__description">
+                Exploratory Data Analysis of The Open Parking and Camera Violations dataset was carried out, Detection and handling of outliers with Spark and Scala, Determine KPIs such as "The peak times for Parking  Violations", among others.                
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Scala</li>
+              <li class="project__stack-item">Spark</li>
+            </ul>
+
+            <a
+              href="https://github.com/walteralv/ApplaudoTrainee"
+              aria-label="live preview"
+              class="link link--icon"
+              target="_blank"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+
+          </div>
+
+          <div class="project">
+            <h3>S&P 500 Analysis</h3>
+            <p class="project__description">
+                In this project I have analyzed the S&P 500, to determine the best companies to invest in. <br>
+                The S&P 500 is a stock market index tracking the stock performance of 500 large companies listed on stock exchanges in the United States.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">Pandas</li>
+              <li class="project__stack-item">Plotly</li>
+            </ul>
+            <a
+              href="https://github.com/walteralv/sp500_Analysis/blob/main/EDA.ipynb"
+              aria-label="source code"
+              class="link link--icon"
+              target="_blank"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="sp500.html"
+              aria-label="live preview"
+              class="link link--icon"
+              target="_blank"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Web Projects -->
+      <section id="web_projects" class="section projects">
+        <h2 class="section__title">Web Projects</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>Enron Mail App</h3>
+            <p class="project__description">
+                This application is a search engine that searches through the emails in the Enron database It contains data from about 150 users, mostly senior management of Enron, organized into folders. The corpus contains a total of about 0.5M messages.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Vue</li>
+              <li class="project__stack-item">JavaScript</li>
+              <li class="project__stack-item">Go</li>
+              <li class="project__stack-item">ZincSearch</li>
+            </ul>
+            <a
+              href="https://github.com/walteralv/enronMailApp"
+              aria-label="live preview"
+              class="link link--icon"
+              target="_blank"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Recipes API</h3>
+            <p class="project__description">
+              In this project I made a REST API for a cooking recipes app, where each user can publish their Recipes and see the recipes of other users.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Django Rest Framework</li>
+              <li class="project__stack-item">Python</li>
+            </ul>
+            <a
+              href="https://github.com/walteralv/recipeAPI/blob/main/core/models.py"
+              aria-label="live preview"
+              class="link link--icon"
+              target="_blank"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">Python</li>
+          <li class="skills__list-item btn btn--plain">Spark</li>
+          <li class="skills__list-item btn btn--plain">Scala</li>
+          <li class="skills__list-item btn btn--plain">Airflow</li>
+
+          <li class="skills__list-item btn btn--plain">MongoDB</li>
+          <li class="skills__list-item btn btn--plain">React</li>
+          <li class="skills__list-item btn btn--plain">Node.js</li>
+          <li class="skills__list-item btn btn--plain">SQL</li>
+          
+          <li class="skills__list-item btn btn--plain">HTML</li>
+          <li class="skills__list-item btn btn--plain">JavaScript</li>
+          <li class="skills__list-item btn btn--plain">CSS</li>
+          <li class="skills__list-item btn btn--plain">Git</li>
+
+          <li class="skills__list-item btn btn--plain">Django</li>
+          <li class="skills__list-item btn btn--plain">Go</li>
+          <li class="skills__list-item btn btn--plain">Linux</li>
+          <li class="skills__list-item btn btn--plain">Docker</li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="mailto:walvdev@gmail.com">
+          <span class="btn btn--outline">Email me</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a
+        href="https://linkedin.com/in/walter-ac"
+        class="link footer__link"
+        target=”_blank”
+      >
+        Created By Walter Alvarado
+      </a>
+    </footer>
+
+    <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+    </div>
+
+    <script src="/js/scripts.js"></script>
+  </body>
+</html>
